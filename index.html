@@ -90,39 +90,39 @@
           <div>
             <div class="con1">
               <div class="header1">
-                <div class="head1">Spotify originals & exclusive shows</div>
+                <div class="head1">Hustle 2.0</div>
                 <div class="show">Show all</div>
               </div>
               <div class="main-cards">
                 <div class="main-card1">
-                  <img src="/Assets/Main-Card1.png" alt="" />
-                  <div class="con-head">Chanakya Niti</div>
-                  <div class="con-dis">Kiran Chavda</div>
+                  <img src="/Assets/cover_1.jpeg" alt="" />
+                  <div class="con-head">2 Woofer Hustle 2.0</div>
+                  <div class="con-dis">MC Square</div>
                 </div>
                 <div class="main-card1">
-                  <img src="/Assets/Main-Card1.png" alt="" />
-                  <div class="con-head">Chanakya Niti</div>
-                  <div class="con-dis">Kiran Chavda</div>
+                  <img src="/Assets/cover_1.jpeg" alt="" />
+                  <div class="con-head">4 Din Hustle 2.0</div>
+                  <div class="con-dis">MC Square</div>
                 </div>
                 <div class="main-card1">
-                  <img src="/Assets/Main-Card2.png" alt="" />
-                  <div class="con-head">The Horror Sh...</div>
-                  <div class="con-dis">TMV Studios</div>
+                  <img src="/Assets/cover_1.jpeg" alt="" />
+                  <div class="con-head">4 Guna Hustle 2.0</div>
+                  <div class="con-dis">Superr Manik</div>
                 </div>
                 <div class="main-card1">
-                  <img src="/Assets/Main-Card3.png" alt="" />
-                  <div class="con-head">Decode Dil wit...</div>
-                  <div class="con-dis">Spotify Studios</div>
+                  <img src="/Assets/cover_1.jpeg" alt="" />
+                  <div class="con-head">101 Hustle 2.0</div>
+                  <div class="con-dis">MC Square</div>
                 </div>
                 <div class="main-card1">
-                  <img src="/Assets/Main-Card4.png" alt="" />
-                  <div class="con-head">Horror Time - ...</div>
-                  <div class="con-dis">Horror Time</div>
+                  <img src="/Assets/cover_1.jpeg" alt="" />
+                  <div class="con-head">Azaadi Hustle 2.0</div>
+                  <div class="con-dis">KhanZaadi</div>
                 </div>
                 <div class="main-card1">
-                  <img src="/Assets/Main-Card4.png" alt="" />
-                  <div class="con-head">Horror Time - ...</div>
-                  <div class="con-dis">Horror Time</div>
+                  <img src="/Assets/cover_1.jpeg" alt="" />
+                  <div class="con-head">Glitch Hustle 2.0</div>
+                  <div class="con-dis">Paradox</div>
                 </div>
               </div>
             </div>
@@ -250,13 +250,19 @@
         </div>
       </div>
       <div class="playbar">
-        <div class="musicPlayback">
-          <div class="controls">
-            <i class="fa-solid fa-backward-step" id="previous"></i>
-            <i class="fa-solid fa-circle-play" id="play"></i>
-            <i class="fa-solid fa-forward-step" id="next"></i>
-          </div>
-          <div class="bar">
+        <div class="songInfo">
+          <img src="" alt="" id="barImg" />
+          <p id="songName"></p>
+        </div>
+        <div class="controls">
+          <i class="fa-solid fa-backward-step" id="previous"></i>
+          <i class="fa-solid fa-circle-play" id="play"></i>
+          <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <div class="vol">Volume</div>
+        <div class="part_2">
+          <p id="startTime"></p>
+          <div class="progressBar">
             <input
               type="range"
               name=""
@@ -266,6 +272,18 @@
               value="0"
             />
           </div>
+          <p id="endTime"></p>
+        </div>
+        <div class="volume">
+          <input
+            type="range"
+            name=""
+            id="volume"
+            min="0"
+            max="1"
+            value="1"
+            step="0.01"
+          />
         </div>
       </div>
     </div>
