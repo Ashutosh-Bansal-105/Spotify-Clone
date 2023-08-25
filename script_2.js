@@ -128,7 +128,8 @@ let endTime = document.getElementById("endTime");
 let barImg = document.getElementById("barImg");
 let songName = document.getElementById("songName");
 let vol = document.getElementById("volume");
-// let showCards = document.getElementById("showCards");
+let showCards = document.getElementById("showCards");
+let back = document.getElementById("back");
 
 // Listen to Events
 
@@ -210,9 +211,13 @@ next.addEventListener("click", () => {
 });
 
 // Showing all songs
-// showCards.addEventListener("click", () => {
-//   window.location = "http://127.0.0.1:5500/all_Cards.html";
-// });
+showCards.addEventListener("click", () => {
+  window.location = "http://127.0.0.1:5500/all_Cards.html";
+});
+//Returning to home page
+back.addEventListener("click", () => {
+  window.location = "http://127.0.0.1:5500/index.html";
+});
 
 // Play songs using cards
 for (let i = 0; i < songs.length; i++) {

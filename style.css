@@ -293,18 +293,19 @@
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   column-gap: 1rem;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 .main-card1 {
   background-color: var(--forth-background-color);
   border-radius: 0.5rem;
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   line-height: 1.8rem;
   transition: 0.2s ease-in;
   height: 12.5rem;
   width: 8rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .main-card1:hover {
@@ -312,9 +313,28 @@
   cursor: pointer;
 }
 
+.main-card1:hover .card-play {
+  display: inherit;
+}
+
 .main-card1 img {
   height: 8rem;
   width: 8rem;
+}
+
+.card-play {
+  display: none;
+  position: relative;
+  left: 5rem;
+  bottom: 9rem;
+  transition: 1s ease-in-out;
+}
+
+.card-play i {
+  font-size: 2.5rem;
+  color: green;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .con-head {
@@ -346,11 +366,6 @@
   justify-content: start;
   align-items: center;
 }
-
-/* .vol {
-  grid-row-start: 1;
-  grid-row-end: 3;
-} */
 
 .controls i {
   font-size: 1.5rem;
